@@ -267,9 +267,7 @@ plt.show()
 
 则有:
 
-$
-f(x)={{x^{(\alpha-1)} e^{(-\lambda x)}}\over{\Gamma(\alpha)\beta^\alpha}} ,x>0
-$
+$f(x)={ {x^{(\alpha -1)} e^{(-\lambda x)} }\over{\Gamma(\alpha)\beta^\alpha}} ,x>0$
 
 
     random.gammavariate(alpha, beta)
