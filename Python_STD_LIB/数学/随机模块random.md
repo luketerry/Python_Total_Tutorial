@@ -142,7 +142,7 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_16_0.png)
+![png](random_files/16_0.png)
 
 
 ### β分布
@@ -199,7 +199,7 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_18_0.png)
+![png](random_files/18_0.png)
 
 
 ## 指数分布
@@ -215,7 +215,7 @@ plt.show()
 $ f(x)=\begin{cases}
     \lambda e^{-\lambda x}&\text{$x>0$},\\
     0&\text{$x\le0$}.
-\end{cases} 
+\end{cases}
 $
 累积分布函数:
 
@@ -256,7 +256,7 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_21_0.png)
+![png](random_files/21_0.png)
 
 
 ## 伽玛分布
@@ -267,8 +267,8 @@ plt.show()
 则有:
 $f(x)={{x^{(\alpha-1)} e^{(-\lambda x)}}\over{\Gamma(\alpha)\beta^\alpha}} ,x>0
 $
-    
-    
+
+
     random.gammavariate(alpha, beta)
 
 
@@ -281,7 +281,7 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_23_0.png)
+![png](random_files/23_0.png)
 
 
 ## 高斯分布(正态分布)
@@ -308,7 +308,7 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_25_0.png)
+![png](random_files/25_0.png)
 
 
 ## 对数正态分布
@@ -335,7 +335,7 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_27_0.png)
+![png](random_files/27_0.png)
 
 
 ## 冯·米塞斯分布
@@ -356,7 +356,7 @@ $
 
 
     random.vonmisesvariate(mu, kappa)
-    
+
 
 
 ```python
@@ -368,7 +368,7 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_29_0.png)
+![png](random_files/29_0.png)
 
 
 ## 帕累托分布
@@ -396,7 +396,7 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_31_0.png)
+![png](random_files/31_0.png)
 
 
 ## 韦伯分布
@@ -426,5 +426,4 @@ plt.show()
 ```
 
 
-![png](%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_files/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9D%97%28random%29_33_0.png)
-
+![png](random_files/33_0.png)
