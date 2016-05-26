@@ -67,9 +67,9 @@ math.radians(x)|度转弧度
 
 函数|说明
 ---|---
-math.sinh(x)|双曲正弦： $\sinh x = {{e^x  - e^{ - x} } \over 2}$
-math.cosh(x)|双曲余弦：$\cosh x = {{e^x  + e^{ - x} } \over 2}$
-math.tanh(x)|双曲正切：$\tanh x = {{\sinh x} \over {\cosh x}}$
+math.sinh(x)|双曲正弦：`$\sinh x = {{e^x  - e^{ - x} } \over 2}$`
+math.cosh(x)|双曲余弦：`$\cosh x = {{e^x  + e^{ - x} } \over 2}$`
+math.tanh(x)|双曲正切：`$\tanh x = {{\sinh x} \over {\cosh x}}$`
 math.acosh(x)|反双曲余弦
 math.asinh(x)|反双曲正弦
 math.atanh(x)|反双曲正切
@@ -80,11 +80,10 @@ math.atanh(x)|反双曲正切
 
 函数|说明
 ---|---
-math.erf(x)|误差函数: $\operatorname{erf}(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\,\mathrm dt.$
-math.erfc(x)|互补误差函数:$\mbox{erfc}(x) = 1-\mbox{erf}(x) = \frac{2}{\sqrt{\pi}} \int_x^{\infty} e^{-t^2}\,\mathrm dt\,.$
-math.gamma(x)|伽玛函数 $\Gamma(z) = \int_{0}^{\infty} \frac{t^{z-1}}{\mathrm{e}^t} \,{\rm{d}}t$
+math.erf(x)|误差函数: `$\operatorname{erf}(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\,\mathrm dt.$`
+math.erfc(x)|互补误差函数:`$\mbox{erfc}(x) = 1-\mbox{erf}(x) = \frac{2}{\sqrt{\pi}} \int_x^{\infty} e^{-t^2}\,\mathrm dt\,.$`
+math.gamma(x)|伽玛函数 `$\Gamma(z) = \int_{0}^{\infty} \frac{t^{z-1}}{\mathrm{e}^t} \,{\rm{d}}t$`
 math.lgamma(x)|伽马函数绝对值的自然对数
 
 
 **在标准库中还有一个cmath,他是针对复数的数学库,差不太多就不做详细介绍了. 而3.4后新增的统计模块因为数据科学一般用2.7版本,所以也不多介绍**
-
