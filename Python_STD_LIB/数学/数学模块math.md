@@ -67,9 +67,9 @@ math.radians(x)|度转弧度
 
 函数|说明
 ---|---
-math.sinh(x)|双曲正弦：`$\sinh x = {{e^x  - e^{ - x} } \over 2}$`
-math.cosh(x)|双曲余弦：`$\cosh x = {{e^x  + e^{ - x} } \over 2}$`
-math.tanh(x)|双曲正切：`$\tanh x = {{\sinh x} \over {\cosh x}}$`
+math.sinh(x)|双曲正弦
+math.cosh(x)|双曲余弦
+math.tanh(x)|双曲正切
 math.acosh(x)|反双曲余弦
 math.asinh(x)|反双曲正弦
 math.atanh(x)|反双曲正切
