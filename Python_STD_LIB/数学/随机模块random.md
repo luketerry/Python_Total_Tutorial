@@ -264,8 +264,11 @@ plt.show()
 概率密度函数:
 
 令  $X\sim  \Gamma(\alpha,\beta)$ ;
+
 则有:
-$f(x)={{x^{(\alpha-1)} e^{(-\lambda x)}}\over{\Gamma(\alpha)\beta^\alpha}} ,x>0
+
+$
+f(x)={{x^{(\alpha-1)} e^{(-\lambda x)}}\over{\Gamma(\alpha)\beta^\alpha}} ,x>0
 $
 
 
