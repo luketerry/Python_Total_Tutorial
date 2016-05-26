@@ -154,7 +154,7 @@ plt.show()
 
 概率密度函数为:
 
-$\begin{align}
+$$ \begin{align}
 f(x)=&
 x^{\alpha-1}(1-x)^{\beta-1}
 \over
@@ -162,14 +162,14 @@ x^{\alpha-1}(1-x)^{\beta-1}
 =&{\Gamma(\alpha+\beta)\over{\Gamma(\alpha)\Gamma(\beta)}}x^{\alpha-1}(1-x)^{\beta-1}\\
 =&{1\over B(\alpha-\beta)}x^{\alpha-1}(1-x)^{\beta-1}
 \end{align}
-$
+$$
 
 累积分布函数:
 
-$\begin{align}
+$$\begin{align}
 F(x;\alpha,\beta)=&B_x(\alpha,\beta)\over B(\alpha,\beta)&=I_x(\alpha,\beta)
 \end{align}
-$
+$$
 
 $$ \text 其中{B_x(\alpha,\beta)}\text 是不完全Β函数,{I_x(\alpha,\beta)} \text 是正则不完全贝塔函数$$
 
@@ -213,24 +213,24 @@ plt.show()
 
 概率密度函数:
 
-$ f(x)=\begin{cases}
+$$ f(x)=\begin{cases}
     \lambda e^{-\lambda x}&\text{$x>0$},\\
     0&\text{$x\le0$}.
 \end{cases}
-$
+$$
 累积分布函数:
 
-$ F(x;\lambda)=\begin{cases}
+$$ F(x;\lambda)=\begin{cases}
     1- e^{-\lambda x}&\text{$x\ge0$},\\
     0&\text{$x<0$}.
-\end{cases} $
+\end{cases} $$
 
 期望值:
 
-$ EX=\lambda^{-1} $
+$$ EX=\lambda^{-1} $$
 
 方差:
-$D(X)=Var(X)=\lambda ^{-2}$
+$$D(X)=Var(X)=\lambda ^{-2}$$
 
     random.expovariate(lambd)
 
@@ -264,11 +264,11 @@ plt.show()
 
 概率密度函数:
 
-令  $X\sim  \Gamma(\alpha,\beta)$ ;
+令  $$X\sim  \Gamma(\alpha,\beta)$$ ;
 
 则有:
 
-$f(x)={ {x^{(\alpha -1)} e^{(-\lambda x)} }\over{\Gamma(\alpha)\beta^\alpha}} ,x>0$
+$$f(x)={ {x^{(\alpha -1)} e^{(-\lambda x)} }\over{\Gamma(\alpha)\beta^\alpha}} ,x>0$$
 
 
     random.gammavariate(alpha, beta)
@@ -290,9 +290,9 @@ plt.show()
 
 概率密度函数:
 
-$
+$$
 f(x)={1\over {\sqrt {2\pi}\sigma}}exp(-{(x-\mu)^2\over{2\sigma^2}})
-$
+$$
 其中 $\mu$ 与 $\sigma$ 分别是变量对数的平均值与标准差
 
 
@@ -318,9 +318,9 @@ plt.show()
 如果 X 是正态分布的随机变量，则 exp(X) 为对数正态分布；同样，如果 Y 是对数正态分布，则 ln(Y) 为正态分布。 如果一个变量可以看作是许多很小独立因子的乘积，则这个变量可以看作是对数正态分布。
 
 概率密度函数:
-$
+$$
 f(x;\mu,\sigma) = \frac{1}{ \sigma \sqrt{2 \pi}} e^{-(\ln x - \mu)^2/2\sigma^2}
-$
+$$
 
 其中 $\mu$ 与 $\sigma$ 分别是变量对数的平均值与标准差
 
@@ -345,9 +345,9 @@ plt.show()
 冯·米塞斯分布（von Mises distribution）指一种圆上连续概率分布模型，它也被称作循环正态分布
 
 概率密度函数:
-$
+$$
 f(x|\mu,\kappa)=\frac{e^{\kappa\cos(x-\mu)}}{2\pi I_0(\kappa)}
-$
+$$
 
 参数μ和1/κ是μ和σ^2（对应正态分布中的均值和方差）的模拟量
 + μ是位置的度量（分布将围绕μ成簇）
@@ -379,9 +379,9 @@ plt.show()
 帕累托分布是以意大利经济学家维弗雷多·帕雷托命名的。 是从大量真实世界的现象中发现的幂定律分布。这个分布在经济学以外，也被称为布拉德福分布。
 
 概率密度函数:
-$
+$$
 p(x) = \left \{ \begin{matrix} 0, & \mbox{if }x < x_{\min}; \\  \\ {k \; x_{\min}^k \over x^{k+1}}, & \mbox{if }x > x_{\min}. \end{matrix} \right.
-$
+$$
 
 k是形状参数(shape parameter)
 
@@ -407,11 +407,11 @@ plt.show()
 
 概率密度函数:
 
-$
+$$
 f(x;\lambda,k) =  \begin{cases}
 \frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-(x/\lambda)^{k}} & x\geq0\\
 0 & x<0\end{cases}
-$
+$$
 
 λ＞0是比例参数（scale parameter），k＞0是形状参数（shape parameter）
 
