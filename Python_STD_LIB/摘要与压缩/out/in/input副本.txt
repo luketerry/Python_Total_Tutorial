@@ -1,0 +1,116 @@
+强大的交互执行框架--Jupyter及其支持的几种优秀语言介绍
+
+Jupyter 是ipython notebook 脱离ipython项目后的一个独立项目.不同于notebook, Jupyter已经不再只是python的交互执行框架,
+而是致力于多语言通用的交互执行.
+
+在以前 notebook作为ipython的一个子项目就受到许多人的喜爱和追捧,当时就已经可以通过多种途径利用它执行其他非python语言.
+现在Jupyter 与ipython分家后,这一特性得到了更好的支持.
+
+现在的Jupyter只负责交互执行,而执行的是什么语言其实是由其执行核心--kernel 来实现的,而现在的ipython可以自带其执行python版本的python核心.
+
+于是顺带的,本文也介绍几种支持Jupyter的优秀的语言.
+
+## Jupyter支持的语言:
+
+在[这里](https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages)你可以看到目前支持的语言.
+
+
+## Jupyter的安装:
+
+Jupyter 现在是独立安装.当然,你依然需要装有python 和 pip.
+
+
+    $pip install jupyter
+
+如果你用brew 安装的python3,那么自然的
+
+    $pip3 install jupyter
+
+## 运行
+
+    $jupyter notebook
+
+
+    当然了,没有kernel是没法运行的
+
+
+## 几个比较值得安装的的kernel安装:
+
+本文中介绍的的kernel只在mac下测试安装成功,在linux下应当都能成功,但windows下未必.
+欢迎朋友们写下其他平台的经验,我看到也会进行修改,谢谢
+
+### 通用依赖
+几乎所有kernel都需要`zeromq`和`openssl`这两个库,他们都可以用brew安装
+
+brew install zeromq
+brew install openssl
+
+> python2与python3并存
+
+### 安装依赖
+
+python的kernel自然依赖于python.
+
+对于新手来说python2和python3并存本身就是件比较纠结蛋碎的事儿,mac下一般会用homebrew安装两个版本
+(当然也会有人安装其他比如pypy之类,那个咱不管)
+
+    $brew install python
+    $brew install python3
+
+
+如果是这样安装,那python python2 python3对应的便是不同版本的python如下表(可能版本不同有些许不同)
+
+命令|python来源|pip命令|库位置
+---|---|---|---
+python|brew 安装的 python|pip|/usr/local/lib/python2.7/site-packages
+python2|brew 安装的 python|pip|/usr/local/lib/python2.7/site-packages
+python3|brew 安装的 python3|pip3|/usr/local/lib/python3.4/site-packages
+
+
+### 安装kernel
+
+**分别安装ipython,在各自环境下执行**
+
+    $pip install ipython[all]
+    $ipython kernelspec install-self
+    $pip3 install ipython[all]
+    $ipython kernelspec install-self
+
+### 测试下
+
+打开Jupyter:
+
+    jupyter notebook
+
+可以在*new*看到里面出现*Python 2*和*Python 3*两个可选项
+
+>Bash
+
+Bash 不用多介绍,最通用的shell命令语言,同时它的kernel也是安装起来最简单的kernel了.
+
+### 安装Bash-kernel
+
+安装Bash-kernel只要用pip工具即可
+
+    pip install bash_kernel
+    python -m bash_kernel.install
+
+### 测试下
+
+新建一个bash用的notebook
+在其中的一个cell中输入
+
+    for i in {1..5}
+    do  
+        echo $i  
+    done  
+
+
+看看是不是输出了1到5这5个数
+
+更多的bash语言细节可以[点击这里查看](http://www.yiibai.com/shell/)
+
+>Golang
+
+Go语言是谷歌几年前推出的一门编译型语言,它以简洁优雅高,高开发效率,高可维护性和善于处理高并发而著称
+Go有一套完善的开发流程和语言规范,而在Jupyter下执行Go主要是用于学习其语言特性
