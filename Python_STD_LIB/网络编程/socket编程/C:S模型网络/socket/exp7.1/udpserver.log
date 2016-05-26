@@ -1,5 +1,0 @@
-Mon, 21 Mar 2016 11:53:46 server.py[line:29] INFO 等待连接
-Mon, 21 Mar 2016 11:53:49 server.py[line:44] INFO 连接来自
-Mon, 21 Mar 2016 11:53:49 server.py[line:46] INFO localhost('127.0.0.1', 62307)
-Mon, 21 Mar 2016 11:53:49 server.py[line:55] INFO 准备返回发送
-Mon, 21 Mar 2016 11:53:49 server.py[line:57] INFO 发送结束
