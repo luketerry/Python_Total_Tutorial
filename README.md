@@ -18,4 +18,4 @@ html和xml文本处理方面的强大能力,它也被看做是matlab非常优秀
 
 我写这篇长文主要是传道外加复习梳理，难免会有出错的地方，还望多多指正。
 
-本篇写的时候Python3的版本号是3.5,Python2则为2.7
+本篇写的时候Python3的版本号是3.5,Python2则为2.7,要看源码的小盆友可以在[项目的master分支查看](https://github.com/hsz1273327/Python_Total_Tutorial)
