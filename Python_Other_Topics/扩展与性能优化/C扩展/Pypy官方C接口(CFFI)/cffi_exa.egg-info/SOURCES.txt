@@ -1,6 +1,0 @@
-setup.py
-cffi_exa.egg-info/PKG-INFO
-cffi_exa.egg-info/SOURCES.txt
-cffi_exa.egg-info/dependency_links.txt
-cffi_exa.egg-info/requires.txt
-cffi_exa.egg-info/top_level.txt

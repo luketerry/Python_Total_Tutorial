@@ -4,10 +4,9 @@ Python是一门很"魔法"的语言,它除了有不少方便的特性外,还有�
 
 这部分内容包括:
 
-+ 大数计算
-+ 跨版本兼容
-+ 模式匹配(pattern matching)
-+ Python与并发(concurrent)
-+ 元编程(metaprogramming)
-+ 惰性求值(laziness)
-+ 记忆(memoization)
++ Python的大整数计算
++ 跨版本兼容问题
++ 关于内建模块builtins(`__builtin__`,`builtins`和`__builtins__`)
++ 函数传参究竟传值还是传引用?
++ 扩展与性能优化
++ python与设计模式
